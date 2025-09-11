@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Tadhg</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+    .Llogo {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Medium screens (tablets) */
+    @media (min-width: 600px) {
+      .Llogo {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    /* Large screens (desktops) */
+    @media (min-width: 1024px) {
+      .Llogo {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .Llogo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #0A66C2; /* LinkedIn blue */
+      border-radius: 8px;        /* rounded corners */
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .Llogo:hover {
+      background-color: #004182; /* darker blue on hover */
+    }
+
+    .Llogo {
+      width: 60px;
+      height: 60px;
+      fill: #fff; /* white logo inside */
+    }
+    .cool-bullets {
+  list-style: none;       /* Remove default bullets */
+  padding-left: 0;
+}
+
+.cool-bullets li {
+  position: relative;
+  padding-left: 30px;     /* space for the custom icon */
+  margin-bottom: 15px;    /* spacing between items */
+  font-size: 1.1rem;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.cool-bullets li::before {
+  content: "★";            /* You can replace with "✔", "•", "→", or an emoji */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0A66C2;          /* LinkedIn blue or any accent color */
+  font-size: 1.2rem;
+}
+
+.cool-bullets li:hover {
+  transform: scale(1.05);  /* slight hover effect */
+  color: #0A66C2;          /* text changes color on hover */
+}
+.highlight-paragraph {
+  background-color: #f0f7ff; /* soft blue shade */
+  border-left: 6px solid #0A66C2; /* LinkedIn-style blue accent */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+    body { background-color: ivory; }
+    .profile-img { max-width: 300px; border-radius: 10px; object-fit: cover; }
+    .section-title { font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; text-decoration: underline; }
+    @media (max-width: 767px) { .profile-row { flex-direction: column !important; text-align: center; } .profile-img { margin-bottom: 1rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html"><img src="../Assets/images/MRKTs.jpg" alt="MRKT" height="30"> MRKT Marketing Solutions</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <h1 class="text-center fw-bold mb-5">Meeting Tadhg</h1>
+  <div class="d-flex align-items-start profile-row gap-4 flex-wrap">
+    <div class="flex-shrink-0">
+   <div class="d-flex align-items-center gap-2">
+  <img src="../Assets/images/Tadhg.jpg" alt="Tadhg" class="profile-img">
+  <a href="https://www.linkedin.com/in/tadhg-baxter-98a7b2284/"
+     target="_blank"
+     rel="noopener noreferrer"
+     title="Tadhg Baxter on LinkedIn">
+    <svg class="Llogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.66 53.66 0 11107.5 160a53.66 53.66 0 01-53.66-53.64zM447.9 448h-92.4V304.1c0-34.3-12.3-57.7-43.1-57.7-23.5 0-37.6 15.8-43.7 31.1-2.3 5.6-2.9 13.5-2.9 21.4V448h-92.4s1.2-270.6 0-299.1h92.4v42.4c12.3-19 34.5-46 84-46 61.4 0 107.6 40 107.6 125.9z"/>
+    </svg>
+  </a>
+</div>
+    </div>
+    <div class="flex-grow-1">
+      <p>Hello! My name is Tadhg Baxter, and I am 22 years of age. I was born and am currently living in County Wexford. I am an avid sports fan and take part and pride in frequent exercise. I played many sports growing up and am still involved as a volunteer within these clubs/sports.</p>
+      <h3 class="section-title"> My Experience</h3>
+      <ul class="cool-bullets">
+        <li>Currently manage and update social media accounts for “The Schooner Bar & Lounge”</li>
+        <li>3-month internship with ESB as a Corporate Social Responsibility Coordinator</li>
+        <li>Abundance of group projects completed both professionally and in an educational setting</li>
+        
+      </ul>
+      
+      <h3 class="section-title">Skills</h3>
+      <ul class="cool-bullets">
+        <li> Google Analytics Certification (2025)</li>
+        <li> Fundamentals of Digital Marketing (2022)</li>
+         <li>Microsoft Office 365 & Google Workspace</li>
+        <li>Canva</li>
+        <li>Adobe Creative Cloud</li>
+        <li>Dreamweaver/Weebly</li>
+        <li>Social Media Competency</li>
+      </ul>
+      <h3 class="section-title">Personal Qualities</h3>
+      <p class="highlight-paragraph">I consider myself to be a highly dedicated individual specifically in completeting tasks,
+        reaching targets, and fulfilling goals. From captaining sports teams to leading group projects in college,
+        it is within my soul to motivate and inspire through creative ideas and that extra push that is required to gain the best results.
+        "With Tadhg you will obtain a mix of light hearted humour with strong strategic perfromace which helps him get the best out of anyone who works with him". (Dave)
+      </p>
+      <h3 class="section-title">Interests and Accolades</h3>
+      <ul class="cool-bullets">
+      <li>Coach/Selector for local GAA senior hurling/football team. </li>
+      <li>Frequent volunteer for local GAA club.</li>
+      <li>Currently training for Dublin Marathon in which I am raising money for the Irish Cancer Society. </li>
+      <li>Created website through Weebly for current job/business. Visit <a href="https://theschoonerbar.weebly.com/" target="_blank" rel="noopener noreferrer">The Schooner Bar</a> for more information.</p></li>
+      <li>Spectator of an abundance of different sports and exercise related games.</li>
+      <li>Currently work in a very social setting as a Bartender.</li>
+</li>
+</ul>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 my-5 border-top text-center">
+  <div class="mt-3">
+    <a href="../index.html" style="color: black; font-size: 1.5rem; text-decoration: none;">
+      <i class="bi bi-arrow-up-circle-fill"></i> Back to Home
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
