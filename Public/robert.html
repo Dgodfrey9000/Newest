@@ -85,6 +85,35 @@
   font-size: 1.05rem;
   line-height: 1.6;
 }
+      .bubble {
+  background-color: #1b588a70; /* LinkedIn blue */
+  border-radius: 40%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: auto; /* push it to the right */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.bubble:hover {
+  transform: translateX(20px) scale(1.1); /* slide right + enlarge */
+}
+
+.bubble-img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 40%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bubble:hover .bubble-img {
+  transform: scale(1.15);
+}
     body { background-color: ivory; }
     .profile-img { max-width: 300px; border-radius: 10px; object-fit: cover; }
     .section-title { font-weight: bold; margin-top: 1rem; margin-bottom: 0.5rem; text-decoration: underline; }
@@ -149,6 +178,9 @@
         <li>Adobe Creative Cloud</li>
         <li>Dreamweaver/Weebly</li>
       </ul>
+        <div class="bubble">
+    <img src="../Assets/images/rai.jpeg" alt="Skills" class="bubble-img">
+  </div>
       <br/>
       <br/>
       <hr>
@@ -159,10 +191,10 @@
       <br/>
       <hr>
       <h3 class="section-title">Interests and Accolades</h3> <ul class="cool-bullets">
-      <li>	I keep myself fit by going to the gym multiple times a week for intense strength building workout. </li>
-      <li>I follow multiple sports including football, tennis and rugby.</li>
+      <li>	I keep myself fit by going to the gym multiple times a week for intense strength building workout </li>
+      <li>I follow multiple sports including football, tennis and rugby</li>
       <li>	I am an FAI season ticket holder and have been since 2013 and enjoy attending games</li>
-      <li>I enjoy cooking and love to experiment with new recipes and combinations.</li>
+      <li>I enjoy cooking and love to experiment with new recipes and combinations</li>
 </ul>
       <br/>
       <br/>
@@ -183,5 +215,6 @@
 </body>
 
 </html>
+
 
 
