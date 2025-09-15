@@ -21,7 +21,7 @@
       border-radius: 0.75rem;
     }
 
-    /* Hover text overlay */
+    
     .carousel-item {
       position: relative;
     }
@@ -46,7 +46,7 @@
       opacity: 1;
     }
 
-    /* Control image sizing */
+   
     .carousel-item img {
       max-width: 100%;
       max-height: 500px;
@@ -66,12 +66,52 @@
     width: 100vw;        /* full viewport width */
     margin-left: calc(-50vw + 50%); /* ensures border spans entire page */
   }
+      }
+  .portrait-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;   /* keeps it close to carousel image sizes */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.portrait-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+
+.portrait-wrapper:hover .portrait-img {
+  transform: scale(1.1);
+}
+
+.portrait-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.75rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portrait-wrapper:hover .portrait-caption {
+  opacity: 1;
+}
   </style>
 </head>
 
 <body id="top">
 
-  <!-- Navbar -->
+
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="Assets/images/MRKTs.jpg" alt="MRKT" height="30"> MRKT Marketing Solutions</a>
@@ -105,7 +145,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  
  <div class="px-4 pt-5 my-5 text-center border-bottom">
   <h1 class="display-4 fw-bold text-body-emphasis">MRKT Marketing Solutions</h1>
   <div class="col-lg-8 mx-auto">
@@ -126,11 +166,11 @@
 
   btn.addEventListener("click", function () {
     if (btn.innerHTML === "😊") {
-      btn.innerHTML = "Welcome!"; // toggle back
+      btn.innerHTML = "Welcome!"; 
       btn.classList.remove("btn-success");
       btn.classList.add("btn-primary");
     } else {
-      btn.innerHTML = "😊"; // change to smiley
+      btn.innerHTML = "😊"; 
       btn.classList.remove("btn-primary");
       btn.classList.add("btn-success");
     }
@@ -142,14 +182,14 @@
     </div>
   </div>
 
- <!-- Features Section -->
+ 
 <div class="container px-4 py-5" id="featured-3">
   <h2 class="pb-2 border-bottom">Why Choose MRKT Marketing Solutions?</h2>
 
-  <!-- Row of features -->
+
   <div class="row g-4 py-5 row-cols-1 row-cols-md-3 text-center">
     
-    <!-- Feature 1 -->
+   
     <div class="col">
       <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
         <img src="Assets/images/MRKTs.jpg" alt="MRKT" height="50">
@@ -158,7 +198,7 @@
       <p>Through our college years experience, we always promise to put in that little bit extra to achieve the highest grades possible. Each team member brings a variety of experience both professionally and academically, dedicated to keeping up with trends and achieving top results.</p>
     </div>
 
-    <!-- Feature 2 -->
+    
     <div class="col">
       <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
         <img src="Assets/images/MRKTs.jpg" alt="MRKT" height="50">
@@ -167,7 +207,7 @@
       <p>A mix of right-brain and left-brain thinkers, each team member contributes innovative ideas tailored to the business’s preferences and willingness to take strategic risks.</p>
     </div>
 
-    <!-- Feature 3 -->
+    
     <div class="col">
       <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
         <img src="Assets/images/MRKTs.jpg" alt="MRKT" height="50">
@@ -177,13 +217,12 @@
     </div>
 
   </div>
-   <!-- “Meet the Team” heading -->
+  
  <div class="meet-team-section text-center mt-5">
   <h3 class="fs-2 text-decoration-underline">Meet the Team</h3>
   </div>
 </div>
 
- <!-- Carousel Section -->
 <div class="container my-5">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-indicators">
@@ -234,8 +273,13 @@
     </button>
   </div>
 </div>
+<div class="container my-5 text-center">
+  <div class="portrait-wrapper">
+    <img src="Assets/images/team2.jpeg" alt="Portrait" class="portrait-img">
+    <div class="portrait-caption">Thank you for Choosing MRKT Marketing Solutions!</div>
+  </div>
+</div>
 
-  <!-- Footer -->
   <div class="container">
     <footer class="py-5 my-5 border-top">
       <div class="row">
@@ -257,4 +301,5 @@
 </body>
 
 </html>
+
 
