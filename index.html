@@ -55,22 +55,21 @@
       border-radius: 10px;
     }
 
-    html {
+ html {
       scroll-behavior: smooth;
     }
      .meet-team-section {
-    border-top: 4px solid #0A66C2;   
+    border-top: 4px solid #0A66C2;   /* LinkedIn blue, you can change */
     border-bottom: 4px solid #0A66C2;
     padding: 20px 0;
-    background: #f8f9fa; 
-    width: 100vw;       
-    margin-left: calc(-50vw + 50%); 
+    background: #f8f9fa; /* light gray background to make it pop */
+    width: 100vw;        /* full viewport width */
+    margin-left: calc(-50vw + 50%); /* ensures border spans entire page */
   }
-      }
   .portrait-wrapper {
   position: relative;
   width: 100%;
-  max-width: 400px;   
+  max-width: 300px;   /* keeps it close to carousel image sizes */
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
@@ -84,11 +83,12 @@
   object-fit: cover;
 }
 
-
+/* Hover zoom effect */
 .portrait-wrapper:hover .portrait-img {
   transform: scale(1.1);
 }
 
+/* Optional overlay caption */
 .portrait-caption {
   position: absolute;
   bottom: 0;
@@ -301,6 +301,7 @@
 </body>
 
 </html>
+
 
 
 
