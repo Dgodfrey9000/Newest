@@ -76,8 +76,20 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-.portrait-img {
+.portrait-wrapper {
+  position: relative;
   width: 100%;
+  max-width: 500px;        /* same as carousel image max width */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.portrait-img {
+  width: auto;
+  max-width: 100%;
+  max-height: 500px;       /* same as carousel max height */
   height: auto;
   transition: transform 0.5s ease;
   object-fit: cover;
@@ -94,8 +106,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.473);
+  color: #ffffff;
   padding: 0.75rem;
   font-weight: bold;
   font-size: 1.2rem;
@@ -301,6 +313,7 @@
 </body>
 
 </html>
+
 
 
 
